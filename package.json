@@ -1,0 +1,24 @@
+{
+  "name": "typechesstwitch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeSlone/TypeChessTwitch.git"
+  },
+  "author": "Jake Slone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakeSlone/TypeChessTwitch/issues"
+  },
+  "homepage": "https://github.com/JakeSlone/TypeChessTwitch#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "robotjs": "^0.6.0",
+    "tmi.js": "^1.8.3"
+  }
+}
