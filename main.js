@@ -16,8 +16,18 @@ client.connect();
 
 const robot = require("robotjs");
 const regex = /[a-h][1-8]/;
+let isMod, isSub;
 
 client.on("message", (channel, tags, message, self) => {
+  if (tags.mod === true) {
+    isMod = true;
+  }
+  if (tags.subscriber === true) {
+    isSub = true;
+  }
+  if (isMod && message === "resign") {
+    robot.keyTap("enter");
+  }
   if (message.length === 4 && regex.test(message)) {
     message = message.toLowerCase();
     robot.typeString(message);
